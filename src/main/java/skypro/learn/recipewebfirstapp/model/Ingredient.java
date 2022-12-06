@@ -14,7 +14,6 @@ public class Ingredient {
     private String measureUnit;
     static Long counterID = 1L;
 
-
     public Ingredient(String title, int quantity, String measureUnit) {
         this.title = title;
         this.quantity = quantity;
