@@ -4,7 +4,6 @@ import lombok.Data;
 
 @Data
 public class Ingredient {
-
     private Long ingredientID;
     //Название в формате строки;
     private String title;
