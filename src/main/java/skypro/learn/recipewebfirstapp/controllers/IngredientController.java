@@ -10,7 +10,6 @@ import java.util.Map;
 @RestController()
 @RequestMapping("ingredients")
 public class IngredientController {
-
     private final IngredientsService ingredientsService;
 
     public IngredientController(IngredientsService ingredientsService) {
@@ -24,6 +23,6 @@ public class IngredientController {
 
     @PostMapping()
     public Map<Long, Ingredient> create(@RequestBody Ingredient ingredient) {
-        return ingredientsService.createIngredient(ingredient.getIngredientID(), ingredient);
+        return ingredientsService.addIngredient(ingredient.getIngredientID(), ingredient);
     }
 }
