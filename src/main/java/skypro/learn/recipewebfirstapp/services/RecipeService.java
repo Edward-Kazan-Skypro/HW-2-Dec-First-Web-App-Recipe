@@ -8,7 +8,6 @@ import java.util.Map;
 
 @Service
 public class RecipeService {
-
     private final RecipeRepository recipeRepository;
 
     public RecipeService(RecipeRepository recipeRepository) {
